@@ -12,9 +12,12 @@ body {
   color: var(--main-color);
 }
 .header {
+  width: 1600px;
+  height: 80px;
   background-color: var(--background-color);
-  margin-bottom: 50px;
-  padding-top: 24px;
+  border: 1px solid black;
+  margin-right: -1px;
+  margin-bottom: -1px;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -24,6 +27,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-right: 93px;
 }
 .header-logo-black {
   font-family: "Raleway", sans-serif;
@@ -37,6 +43,8 @@ body {
   margin-bottom: 25px;
 }
 .header-navigation {
+  display: flex;
+  align-items: center;
 }
 .header .container {
   display: flex;
@@ -44,23 +52,20 @@ body {
 }
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
   background: #ffffff;
 }
-.menu-section {
-  margin-left: auto;
-  align-items: center;
-}
 .menu {
   display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-.menu-link .current {
+.menu-link.current {
   color: #2196f3;
 }
-.menu-item:not (: last-child) {
-  margin-right: 50px;
+.menu-item:not(:last-child) {
+  padding-right: 50px;
 }
 .menu-link {
   font-weight: 500;
@@ -68,7 +73,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-  padding-left: 93px;
 }
 .menu-link:hover {
   color: #2196f3;
@@ -76,14 +80,10 @@ body {
 .menu-link:focus {
   color: #2196f3;
 }
-.contacts-container {
-  margin-left: auto;
-  align-items: center;
-}
-
 .contacts {
   display: flex;
-  margin: 10px 30px;
+  padding-left: 331px;
+  padding-right: 0px;
 }
 .contact-item:not(:last-child) {
   margin-right: 50px;
@@ -210,7 +210,6 @@ body {
   height: 386px;
   left: 215px;
   top: 969px;
-
   background: var(--background-color);
 }
 .employment-title {
@@ -279,7 +278,6 @@ body {
 .footer {
   position: absolute;
   width: 1600px;
-  height: 252px;
   left: 0px;
   top: 2097px;
   background-color: var(--secondary-color);
@@ -344,13 +342,36 @@ body {
   color: #2196f3;
 }
 /* portfolio*/
+.main-portfolio {
+  position: absolute;
+  width: 1200px;
+  height: 1360px;
+  margin-left: 215px;
+  margin-right: 215px;
+  border: 1px solid black;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+.portfolio-navigation {
+  padding-bottom: 34px;
+}
 .container-button-menu {
   display: flex;
+  margin-left: -8px;
+  padding-top: 174px;
+  padding-left: 400px;
 }
 .container-button-item {
+  flex-basis: calc(100% / 5 -8px);
+  margin-left: 8px;
+  border: 1px solid black;
+  margin-right: -1px;
+  margin-bottom: -1px;
 }
 
 .container-button {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -358,6 +379,8 @@ body {
   letter-spacing: 0.03em;
   background: #f5f4fa;
   border-radius: 4px;
+  width: 73px;
+  height: 38px;
 }
 .container-button.current {
   color: #2196f3;
@@ -370,13 +393,22 @@ body {
   background-color: #2196f3;
   color: var(--background-color);
 }
+.work-section {
+}
 .work-menu {
   display: flex;
+  margin-left: -30px;
 }
 .work-item {
+  position: absolute;
+  width: 370px;
+  padding-left: 215px;
+  padding-top: 262px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  flex-basis: calc(100% / 9 * 30px);
+  margin-left: 30px;
 }
 .work-img {
 }
