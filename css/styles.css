@@ -178,6 +178,10 @@ body {
   margin-left: 215px;
   margin-top: auto;
 }
+.work-container {
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
 .main-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
@@ -275,7 +279,7 @@ body {
   position: absolute;
   width: 1200px;
 
-  margin-top: 1417px;
+  margin-top: 1420px;
   background-color: var(--secondary-color);
   margin-left: 215px;
   padding-top: 60px;
