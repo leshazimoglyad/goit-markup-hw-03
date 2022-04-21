@@ -104,15 +104,10 @@ body {
 .contact-link:focus {
   color: #2196f3;
 }
-
-.main {
-}
 .main-section {
   background: #2f303a;
   padding-top: 200px;
-  padding-left: 0px;
   padding-bottom: 200px;
-  padding-right: 0px;
 }
 .main-title {
   font-weight: 900;
@@ -160,13 +155,11 @@ body {
   margin: -1px;
 }
 .main-section-two {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .main-menu {
   display: flex;
-  margin: -30px;
-  background: var(--background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .main-item {
   flex-basis: calc(100% / 4 - 30px);
@@ -191,23 +184,22 @@ body {
   color: var(--main-color);
 }
 .section-employment {
-  background: var(--background-color);
-  margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
   padding-top: 0px;
 }
-.employment-title {
+.employment-title,
+.personnel-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  padding-bottom: 50px;
 }
 .employment-menu {
   display: flex;
   margin-left: -30px;
-  padding-bottom: 94px;
 }
 .employment-item {
   background: var(--background-color);
@@ -216,22 +208,12 @@ body {
 }
 .section-personnel {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
   background: #f5f4fa;
-}
-.personnel-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-color);
 }
 .personnel-menu {
   display: flex;
   margin-left: -30px;
-  background: #f5f4fa;
-  padding-bottom: 94px;
 }
 .personnel-item {
   flex-basis: calc((100%-120px) / 4);
@@ -263,7 +245,9 @@ body {
   color: var(--main-color);
 }
 .footer {
-  background-color: var(--secondary-color);
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: "Raleway";
@@ -323,19 +307,17 @@ body {
   color: #2196f3;
 }
 /* portfolio*/
-.main-portfolio {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.main-portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin: 0 auto;
 }
 .portfolio-navigation {
-  padding-bottom: 34px;
 }
+
 .container-button-menu {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
 }
 .container-button-item:not(:last-child) {
   margin-right: 8px;
@@ -376,11 +358,7 @@ body {
   padding-bottom: 94px;
 }
 .work-item {
-  width: 370px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-bottom: 30px;
 }
@@ -392,6 +370,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-color);
+  margin-bottom: 4px;
 }
 .work-text {
   font-family: "Roboto";
